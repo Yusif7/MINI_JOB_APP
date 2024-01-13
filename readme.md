@@ -10,8 +10,18 @@
 
 # Configuration
 - mysite/setttings/INSTALLED_APPS[add your app name the end of the list]
+- inside app/ after creating templates => create urls.py  => make it to connect views to urls
+  - create urlpatterns inside urls.py
+  - inside project / using include add your path to project urlpattern list 
 
 # Models
 - inside app/models.py/create your models
     - def __str__ => accept us to write output when using print method
     - use makemigrations and migrate for adding model to db
+
+# View 
+- inside app/views/ create your views
+  - render(return which page you need)
+  - add templates directory inside app and create html file here
+  - create urls.py in app add urlpattern
+  - add your path in app to project urls.py using include method
